@@ -7,6 +7,10 @@
 
 A clean, production-ready document analysis application that extracts insights from PDF, DOCX, and TXT files using AI. Built with a defensively architected state machine approach for reliability and maintainability.
 
+<img width="1766" height="933" alt="Image" src="https://github.com/user-attachments/assets/1e838dc2-0049-409b-96c7-ba4ec28005c2" />
+
+<img width="1771" height="930" alt="Image" src="https://github.com/user-attachments/assets/d7df407b-61bf-40fe-9022-00fa898dde9e" />
+
 ## 🎯 Features
 
 - **Multi-Format Support**: Analyze PDF, DOCX, and TXT documents
