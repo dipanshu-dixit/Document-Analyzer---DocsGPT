@@ -1,0 +1,337 @@
+# DocsGPT - Comprehensive .gitignore
+
+# ============================================
+# CRITICAL: API Keys and Secrets
+# ============================================
+# Never commit API keys or credentials
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+config/secrets.json
+config/credentials.json
+secrets/
+credentials/
+
+# API key files
+*apikey*
+*api-key*
+*api_key*
+*secret*
+*token*
+*password*
+
+# ============================================
+# Node.js Dependencies
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Package manager lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# Build and Distribution
+# ============================================
+dist/
+build/
+out/
+*.bundle.js
+*.bundle.js.map
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================
+# Logs and Temporary Files
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+.nyc_output/
+.grunt/
+bower_components/
+.lock-wscript/
+.npm/
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# ============================================
+# Test and Coverage
+# ============================================
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+junit.xml
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+
+# ============================================
+# Uploaded Documents (Privacy)
+# ============================================
+# Never commit user-uploaded documents
+uploads/
+documents/
+files/
+*.pdf
+*.docx
+*.doc
+*.txt
+# Exception: Keep sample/test documents if needed
+!sample-documents/
+!test-fixtures/*.pdf
+!test-fixtures/*.docx
+
+# ============================================
+# Database Files
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# ============================================
+# Cache and Temporary Files
+# ============================================
+.cache/
+.temp/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+*~.nib
+local.properties
+
+# ============================================
+# Environment-Specific
+# ============================================
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ============================================
+# Compiled and Minified Files
+# ============================================
+*.min.js
+*.min.css
+*.map
+!vendor/*.min.js
+!vendor/*.min.css
+
+# ============================================
+# Package and Archive Files
+# ============================================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+
+# ============================================
+# Runtime Data
+# ============================================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# Optional: Keep These Patterns Commented
+# ============================================
+# Uncomment if you want to ignore these
+
+# All PDFs (if you don't want ANY PDFs committed)
+# *.pdf
+
+# All environment files
+# .env*
+
+# All config files
+# config/
+
+# ============================================
+# Project-Specific Ignores
+# ============================================
+
+# Parsed document cache (if implemented)
+.parsed-cache/
+parsed-documents/
+
+# User session data (if stored locally)
+.sessions/
+session-data/
+
+# Generated API documentation
+api-docs/
+docs/generated/
+
+# Performance profiling
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+
+# ============================================
+# Security Scanning Results
+# ============================================
+.snyk
+snyk-results.json
+security-scan-results/
+
+# ============================================
+# Backup Files
+# ============================================
+*.backup
+*.bak
+*.old
+*-backup
+*-old
+
+# ============================================
+# IMPORTANT NOTES
+# ============================================
+# 1. Always review files before committing
+# 2. Use 'git status' to check what will be committed
+# 3. Never commit API keys, even in comments
+# 4. Use environment variables for secrets
+# 5. Add .env.example with dummy values for documentation
+# 6. Regularly audit your repository for leaked secrets
+# 7. Use tools like git-secrets or truffleHog for scanning
+
+# ============================================
+# Recommended: Create .env.example
+# ============================================
+# Copy your .env file to .env.example and replace
+# real values with placeholders:
+# API_KEY=your_api_key_here
+# MODEL=grok-4-1-fast-reasoning
+# PROVIDER=xai
